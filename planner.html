@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+Odunikan Oluwaseun
+
+</div>
+
+<button class="menu-btn" id="menuBtn">
+
+<i class="fas fa-bars"></i>
+
+</button>
+
+<ul id="navMenu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="work.html">Projects</a></li>
+<li><a href="planner.html" class="active">Planner</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="planner-container fade-in">
+
+<h1>Academic Planner</h1>
+
+<p>
+
+Organize your coursework and study schedule.
+
+</p>
+
+<div class="planner-form">
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter a task">
+
+<select id="priority">
+
+<option value="High">🔴 High</option>
+
+<option value="Medium">🟡 Medium</option>
+
+<option value="Low">🟢 Low</option>
+
+</select>
+
+<input
+type="date"
+id="dueDate">
+
+<button id="addTask">
+
+<i class="fas fa-plus"></i>
+
+Add Task
+
+</button>
+
+</div>
+
+<div class="stats">
+
+<div class="card">
+
+<h2 id="total">
+
+0
+
+</h2>
+
+<p>Total</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="completed">
+
+0
+
+</h2>
+
+<p>Completed</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="pending">
+
+0
+
+</h2>
+
+<p>Pending</p>
+
+</div>
+
+</div>
+
+<div id="taskList">
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+    <h2>Odunikan Oluwaseun</h2>
+
+    <p>Cyber Security & Cloud Computing Student</p>
+
+    <div class="footer-icons">
+
+        <a href="https://github.com/Kenpachi019"><i class="fab fa-github"></i></a>
+
+        <a href="https://www.linkedin.com/in/odunikan-oluwaseun-7155a2303"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:o.oluwaseun4275@miva.edu.ng">
+            <i class="fas fa-envelope"></i>
+        </a>
+    <p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+<button id="topBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/top.js"></script>
+
+<script src="js/planner.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/animate.js"></script>
+
+</body>
+
+</body>
+
+</html>
