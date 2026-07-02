@@ -1,1 +1,396 @@
-/* Responsive styles */
+/*=========================================
+        LARGE TABLETS
+=========================================*/
+
+@media (max-width: 992px) {
+
+    .hero,
+    .about-page,
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        padding-top: 130px;
+        gap: 50px;
+    }
+
+    .hero-text,
+    .about-content {
+        width: 100%;
+    }
+
+    .hero-text p {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        aspect-ratio: 1;
+
+    }
+
+    .about-image img {
+        width: 320px;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-info {
+        text-align: left;
+    }
+
+}
+
+/*=========================================
+        MOBILE MENU
+=========================================*/
+
+@media (max-width:768px) {
+
+    .menu-btn {
+        display: block;
+        z-index: 1001;
+    }
+
+    .navbar {
+        height: 75px;
+    }
+
+    .navbar ul {
+
+        position: fixed;
+
+        top: 75px;
+        right: -100%;
+
+        width: 270px;
+        height: calc(100vh - 75px);
+
+        overflow-y: auto;
+
+        background: #071827;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        align-items: center;
+
+        padding-top: 50px;
+
+        transition: right .35s ease;
+
+    }
+
+    .navbar ul.active {
+        right: 0;
+    }
+
+    .navbar ul li {
+        margin: 18px 0;
+    }
+
+}
+
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media (max-width:768px) {
+
+    section {
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .hero {
+
+        flex-direction: column-reverse;
+
+        justify-content: center;
+
+        text-align: center;
+
+        min-height: auto;
+
+        padding: 120px 20px 60px;
+
+    }
+
+    .hero-text {
+
+        width: 100%;
+
+    }
+
+    .hero-text h1 {
+
+        font-size: 36px;
+
+    }
+
+    .hero-text p {
+
+        font-size: 17px;
+
+        text-align: center;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .hero-image {
+
+        width: 100%;
+
+    }
+
+    .hero-image img {
+
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        aspect-ratio: 1;
+
+    }
+
+}
+
+/*=========================================
+        ABOUT
+=========================================*/
+
+@media (max-width:768px) {
+
+    .about-page {
+
+        flex-direction: column;
+
+        margin-top: 110px;
+
+        gap: 40px;
+
+    }
+
+    .about-image {
+
+        width: 100%;
+
+    }
+
+    .about-image img {
+
+        width: 260px;
+
+    }
+
+    .about-content {
+
+        width: 100%;
+
+        text-align: left;
+
+    }
+
+    .about-content h1 {
+
+        font-size: 32px;
+
+    }
+
+}
+
+/*=========================================
+        PROJECTS
+=========================================*/
+
+@media (max-width:768px) {
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .project {
+
+        flex-direction: column;
+
+    }
+
+    .project img {
+
+        width: 100%;
+
+    }
+
+    .project-info {
+
+        padding: 25px;
+
+    }
+
+    .project-info h3 {
+
+        font-size: 24px;
+
+    }
+
+}
+
+/*=========================================
+        CONTACT
+=========================================*/
+
+@media (max-width:768px) {
+
+    .contact-page {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 35px;
+
+    }
+
+    .contact-form,
+    .contact-info {
+
+        width: 100%;
+
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+
+        width: 100%;
+
+    }
+
+}
+
+/*=========================================
+        PLANNER
+=========================================*/
+
+@media (max-width:768px) {
+
+    .planner-container {
+
+        width: 95%;
+
+    }
+
+    table {
+
+        display: block;
+
+        overflow-x: auto;
+
+    }
+
+}
+
+/*=========================================
+        FOOTER
+=========================================*/
+
+@media (max-width:768px) {
+
+    .footer {
+
+        padding: 50px 20px;
+
+    }
+
+    .footer-icons {
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+    }
+
+}
+
+/*=========================================
+        VERY SMALL PHONES
+=========================================*/
+
+@media (max-width:480px) {
+
+    .hero-text h1 {
+
+        font-size: 30px;
+
+    }
+
+    .section-title,
+    .featured-title {
+
+        font-size: 28px;
+
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 210px;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .about-image img {
+
+        width: 220px;
+
+    }
+
+    .logo {
+
+        font-size: 20px;
+
+    }
+
+    .logo-circle {
+
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+
+    }
+
+    .btn {
+
+        width: 100%;
+
+
+        max-width: 320px;
+
+        text-align: center;
+
+    }
+
+}
