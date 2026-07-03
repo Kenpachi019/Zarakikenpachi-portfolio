@@ -2105,3 +2105,32 @@ img{
     overflow:hidden;
 
 }
+
+/* ABOUT AUDIO */
+
+.about-media{
+    width:90%;
+    max-width:800px;
+    margin:60px auto;
+    padding:30px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(0,217,255,.25);
+    border-radius:20px;
+    text-align:center;
+}
+
+.about-media h2{
+    color:#00D9FF;
+    margin-bottom:20px;
+}
+
+.about-media audio{
+    width:100%;
+    margin:20px 0;
+}
+
+.about-media p{
+    color:#ddd;
+    line-height:1.8;
+}
